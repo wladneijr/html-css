@@ -1,0 +1,119 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+  }
+  a {
+    color: #0072c6;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .header-logo img {
+    height: 40px;
+  }
+  .header-search {
+    flex: 1;
+    margin: 0 20px;
+  }
+  .header-search form {
+    display: flex;
+    align-items: center;
+  }
+  .header-search input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 5px;
+    flex: 1;
+  }
+  .header-search button {
+    background-color: #0072c6;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav li {
+    margin: 0 10px;
+  }
+  nav a {
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    margin-top: 70px;
+    padding: 20px;
+  }
+  .main-news {
+    margin-bottom: 20px;
+  }
+  .main-news h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .news-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news-item {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+  }
+  .news-item:last-child {
+    margin-right: 0;
+  }
+  .news-item a {
+    display: block;
+    height: 100%;
+    padding: 10px;
+  }
+  .news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .news-item h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .news-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
