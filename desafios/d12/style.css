@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+@font-face{
+    font-family: 'PassionOne';
+    src: url('fontes/fonteTitulo/PassionOne-Bold.ttf') format(truetype);
+    font-weight: bolder;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fontTitle:'PassionOne';
+}
+
+.title{
+    background-color: #000000;
+    padding: 70px;
+    font-family: var(--fontTitle);
+    font-size: 2em;
+}
+
+header>h1{
+    color: #ffffff;
+    font-family: var(--fontTitle);
+    font-size: 4em;
+    text-align: center;
+}
+
+header>p{
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
