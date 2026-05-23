@@ -8,32 +8,57 @@
 <body>
     <h1>Formulário 003</h1>
     <form action="resultado.js" method="get" autocomplete="on">
-        <p>
-            <label for="inome">Nome: </label>
-            <input type="text" name="name" id="inome" required maxlength="30" placeholder="Digite seu nome completo aqui..." autocomplete="name" style="width: 300px;">
-        </p>
-        <p>
-            <label for="imedia">Média: </label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
-        </p>
-        <P>
-            <label for="imonth">Mês: </label>
-            <input type="month" name="month" id="imonth">
-            <label for="idate">Data: </label>
-            <input type="date" name="date" id="idate" value="2026-05-23" required>
-        </P>
-        <p>
-            <label for="iclock">Hora da avaliação: </label>
-            <input type="time" name="clock" id="iclock" required>
-        </p>
-        <p>
-            <label for="iemail">Email: </label>
-            <input type="email" name="mail" id="iemail" placeholder="example@gmail.com" required>
-        </p>
-        <p>
-            <label for="ipass">Senha: </label>
-            <input type="password" name="pass" id="ipass" placeholder="Mínimo 8 caracteres" minlength="8" required>
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="name" id="inome" required maxlength="30" placeholder="Digite seu nome completo aqui..." autocomplete="name" style="width: 300px;">
+            </p>
+            <p>
+                <label for="imedia">Média: </label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required>
+            </p>
+            <P>
+                <label for="imonth">Mês: </label>
+                <input type="month" name="month" id="imonth">
+                <label for="idate">Data: </label>
+                <input type="date" name="date" id="idate" value="2026-05-23" required>
+            </P>
+            <p>
+                <label for="iclock">Hora da avaliação: </label>
+                <input type="time" name="clock" id="iclock" required>
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="mail" id="iemail" placeholder="example@gmail.com" required>
+                <label for="inumber">Telefone: </label>
+                <input type="tel" name="tel" id="inumber"  autocomplete="(xx) xxxxx-xxxx" pattern="^\(\d{2}\)[0-9]{5}-[0-9]{4}$" placeholder="(xx) xxxxx-xxxx">
+            </p>
+            <p>
+                <label for="ipass">Senha: </label>
+                <input type="password" name="pass" id="ipass" placeholder="Mínimo 8 caracteres" minlength="8" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Games Favoritos</legend>
+            <input type="checkbox" name="rdr" id="irdr"><label for="irdr">Red Dead Redemption</label><br>
+            <input type="checkbox" name="rlg" id="irlg"><label for="irlg">Rocket League</label><br>
+            <input type="checkbox" name="eafc" id="ieafc"><label for="ieafc">EA FC 2026</label><br>
+            <input type="checkbox" name="fhseis" id="iforza"><label for="iforza">Forza Horizon 6</label><br>
+            <input type="checkbox" name="nba" id="inba"><label for="inba">NBA2K26</label><br>
+        </fieldset>
+        <fieldset><!-- NAME TEM QUE SER IGUAL-->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="m"><label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="f"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Permições</legend>
+           <p>
+            <input type="checkbox" name="permicao" id="ipermicao" checked><label for="ipermicao" >Desejo receber atualizações e notificações por email.</label>
+           </p>
+
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
