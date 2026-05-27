@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 006</title>
+</head>
+<body>
+    <h1>Vamos <strong>Somar</strong></h1>
+    <form action="resultado.js" method="post" autocomplete="off">
+        <p>
+            <label for="idnum">Numeros</label>
+            <input type="range" name="numer" id="idnum" oninput="ival.innerHTML= Number(idnum.value)">
+            <output id="ival"></output>
+        </p>
+        <fieldset>
+            <legend>Calculando Idade</legend>
+            <p>
+                <label for="iyear">Em que ano você nasceu? </label>
+                <input type="number" name="year" id="iyear" min="1900" max="2026" oninput="iage.innerHTML= 2026 - Number(iyear.value)">
+                <label for="iage">Sua idade é: </label>
+                <output id="iage">0</output>
+            </p>
+        </fieldset>
+        <p>
+            <label for="inumUm">Primeiro Número:</label>
+            <input type="number" name="numUm" id="inumUm" min="1" max="20" required oninput="isoma.innerHTML= Number(inumUm.value) + Number(inumDois.value) ">
+        </p>
+        <p>
+            <label for="inumDois">Segundo Número:</label>
+            <input type="number" name="numDois" id="inumDois" min="1" max="20" required oninput="isoma.innerHTML= Number(inumUm.value) + Number(inumDois.value)">
+        </p>
+        <p>
+            <label for="isoma">Resultado da Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

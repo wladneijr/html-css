@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 005</title>
+</head>
+<body>
+    <h1>Trabalhando com Formulários</h1>
+    <form action="resultado.js" method="post" autocomplete="off">
+        <p>
+            <label for="iest">Estado onde mora? </label>
+            <select name="estado" id="iest">
+
+                <option value="" selected>-----Escolha aqui</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="listprof">
+
+                <datalist id="listprof">
+                    <option>adminitrador</option>
+                    <option>Pedreiro</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem: </label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
