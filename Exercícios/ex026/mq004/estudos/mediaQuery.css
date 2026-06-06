@@ -2,6 +2,84 @@
 
 /* Todas as demais mídias */
 
-@media print {
-    
+/* Typical Device Breakpoints
+--------------------------------
+
+Pequenas Telas : até 600px
+Celular: de 600px até 768px
+Tablet: de 769px até 992px
+Desktop: - 992px até 1200px
+Grandes Telas: - acima de 1200px
+
+*/
+
+@media print {/* IMPRESSÃO */
+    /* estilo aqui */
+    body{
+        background: url('../imagens/back-print.jpg');
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: none;}
+    img#print { display: block;}
+    img#tv { display: none;}
+
 }
+
+
+@media screen and (min-width:768px) and (max-width:991.98px) {/* TABLETS */
+    /* PODERIA SER (MIN-WIDTH: 768PX) PRAS OUTRAS LARGURAS PODEREM HERDAR AS ESTILIZAÇÕES QUE EU COLOCAR AQUI*/
+    body{
+        background: url('../imagens/back-tablet.jpg');
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: block;}
+    img#pc { display: none;}
+    img#print { display: none;}
+    img#tv { display: none;}
+
+}
+
+@media screen and (min-width:992px) and (max-width:1199.98px){/* LAPTOPS - DESKTOPS */
+    body{
+        background: url('../imagens/back-pc.jpg');
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: block;}
+    img#print { display: none;}
+    img#tv { display: none;}
+}
+
+@media screen and (min-width:1200px){/* GRANDES TELAS - DESKTOPS */
+    body{
+        background: url('../imagens/back-tv.jpg');
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#pc { display: none;}
+    img#print { display: none;}
+    img#tv { display: block;}
+}
+
+/* Categoria Largura Mínima (min-width)
+Dispositivos 
+
+TípicosMobile Retrato (XS)< 576px ou < 640px Celulares antigos/pequenos (ex: iPhone SE, Galaxy padrão). 
+É a base do Mobile-First.
+
+Mobile Paisagem / Telas Pequenas (SM)576px (Bootstrap) ou 640px (Tailwind)Smartphones modernos na horizontal e minitablets.
+
+Tablets (MD)768pxiPads e tablets Android em modo retrato.
+
+Laptops / Desktops Pequenos (LG)992px ou 1024px iPads em modo paisagem, tablets grandes e notebooks antigos.
+
+Desktops Padrão (XL)1200px ou 1280pxMonitores tradicionais de PC e laptops modernos.
+
+Telas Grandes / Monitores (2XL)1400px ou 1536pxMonitores Full HD (1080p), telas de iMac e resoluções mais altas. 
+
+*/
